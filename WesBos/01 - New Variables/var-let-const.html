@@ -6,6 +6,9 @@
 </head>
 <body>
 <script>
+
+//VAR is function scoped, it can leak outside if blocks
+//LET and CONST is block scoped so if a varibale is declared and initiazled in a block of code, it can only be used there
   function setWidth() {
     var width = 100;
     console.log(width);
